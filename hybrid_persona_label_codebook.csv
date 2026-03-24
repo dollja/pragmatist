@@ -1,0 +1,17 @@
+Axis,Label,Definition,Typical_Cues,Tie_Breaker
+Persona,Enterprise IT Buyer,Organizational purchase/deployment/governance context,team; company; employees; SSO; compliance; vendor; rollout; admin,Individual User if purely personal use
+Persona,Individual User,"Personal, household, solo-work, student, or self-serve context",personal; family; class; freelance; home; study; budget,Enterprise IT Buyer if multi-user org context
+Intent_Level,Low,Exploring or learning,what is; how to; guide; tutorial; benefits; examples,Medium if comparing solutions
+Intent_Level,Medium,Evaluating or comparing options,best; top; vs; comparison; alternatives; checklist; features,High if asking for pricing/deployment/proof
+Intent_Level,High,"Ready to act, validate, buy, or deploy",pricing; demo; trial; implementation; migration; proof; compliance; deploy,Medium if still broad comparison
+Topic/Product_Category,Identity & Access Management,"Login, SSO, MFA, permissions",identity; access; SSO; MFA; permissions,Endpoint Security if malware/EDR
+Topic/Product_Category,Endpoint Security & Threat Protection,"Endpoint, antivirus, EDR, malware",endpoint; antivirus; EDR; malware,Identity if login/authentication
+Topic/Product_Category,VPN & Zero Trust Access,"Remote access, VPN, zero trust",vpn; remote access; zero trust,IAM if mostly SSO
+Topic/Product_Category,"Backup, Storage & Continuity","Backups, file storage, recovery",backup; storage; recovery; file retention,Consumer Security if mainly privacy app
+Topic/Product_Category,Procurement & Vendor Evaluation,Choosing between vendors/tools,vendor; pricing; compare vendors; shortlist,Use domain topic if comparison is domain-specific and not procurement-led
+Topic/Product_Category,Productivity & Note-Taking,"Notes, tasks, organization, PKM",notes; organizing; task app; knowledge base,Skills & Training if learning tool usage
+Topic/Product_Category,CRM & Marketing Tools,"CRM, customer tracking, email marketing",crm; leads; email marketing,Procurement if vendor shortlist is primary
+Topic/Product_Category,Web & Site Building,"Site builders, CMS, hosting",website; cms; hosting; landing page,Skills & Training if learning web design
+Topic/Product_Category,Consumer Security & Privacy,"Passwords, home privacy, personal security",password manager; privacy; home security,IAM if enterprise access control
+Topic/Product_Category,End-User Devices & Hardware,Physical devices,laptop; monitor; hardware,Skills & Training if learning device setup
+Topic/Product_Category,Skills & Training,Learning a tool or domain skill,learn; course; tutorial; training,Domain topic if choosing a specific tool

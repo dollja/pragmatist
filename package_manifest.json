@@ -1,0 +1,63 @@
+{
+  "package_name": "complete_hybrid_pragmatist_pipeline_package",
+  "version_label": "final_consolidated_package",
+  "python_version": "3.10+",
+  "entry_points": {
+    "demo_script": "run_complete_pipeline_demo.py",
+    "main_notebook": "advanced_balanced_hybrid_persona_pipeline.ipynb",
+    "notebook_cells": "pragmatist_hybrid_persona_notebook_cells.py"
+  },
+  "core_modules": [
+    {
+      "file": "advanced_balanced_hybrid_persona_pipeline.py",
+      "role": "offline balanced hybrid persona generation, validation, rebalancing, consolidation, and context packet building",
+      "exports": [
+        "HybridPersonaState",
+        "BalancedHybridPipeline",
+        "build_context_packet",
+        "compare_context_strategies"
+      ]
+    },
+    {
+      "file": "pragmatist_hybrid_persona_integration.py",
+      "role": "runtime bridge into Pragmatist-style notebook or agent workflows",
+      "exports": [
+        "PragmatistHybridState",
+        "PragmatistHybridBridge",
+        "PragmatistHybridHooks",
+        "make_pragmatist_hybrid_instructions"
+      ],
+      "derived_from": "pragmatist_hybrid_persona_integration_v3.py"
+    },
+    {
+      "file": "pragmatist_hybrid_context_error_engineering.py",
+      "role": "context-error logging, diagnosis, recommendations, and mitigation",
+      "exports": [
+        "ContextErrorEngineeringConfig",
+        "ContextErrorEngineeringLayer"
+      ]
+    }
+  ],
+  "assets": [
+    "hybrid_persona_schema.json",
+    "hybrid_persona_label_codebook.csv",
+    "hybrid_persona_system_guide.md"
+  ],
+  "docs": [
+    "README.md",
+    "ARCHITECTURE_FLOW.md",
+    "INSTALL_AND_RUN.md",
+    "docs/pragmatist_integration_guide.md",
+    "docs/context_error_engineering_guide.md"
+  ],
+  "templates": [
+    "templates/anchor_cards_template.csv",
+    "templates/observed_records_template.csv"
+  ],
+  "reference_outputs": [
+    "examples/reference_outputs/advanced_hybrid_demo_outputs_v5",
+    "examples/reference_outputs/pragmatist_hybrid_demo_outputs_v2",
+    "examples/reference_outputs/pragmatist_context_error_engineering_demo_outputs_v4"
+  ],
+  "generated_demo_run": "examples/generated_demo_run"
+}
