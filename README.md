@@ -172,7 +172,7 @@ A few choices are deliberate:
 
 ## Where to customize first
 
-If you are adapting this for your own dissertation pipeline, the first places to customize are:
+If you are adapting this for your own pipeline, the first places to customize are:
 
 - your real anchor persona cards
 - your observed seed records
